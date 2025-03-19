@@ -22,7 +22,7 @@ public class Enquiry {
 	private String phNo;
 	private String classMode;
 	private String courses;
-	private String courseStatus;
+	private String enqStatus;
 	@ManyToOne
 	@JoinColumn(name=" counsellor_Id")
 	private Counsellor counsellor;

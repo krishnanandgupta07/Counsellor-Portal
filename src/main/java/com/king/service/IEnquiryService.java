@@ -11,7 +11,7 @@ import com.king.dto.ViewEnquiriesDTO;
 public interface IEnquiryService {
 
 	public DashboardDTO getDashBoardInfo(Integer counsellorId);
-	public boolean addEnquiry(ViewEnquiriesDTO enqDTO ,CounsellorDTO counsellorId);
+	public boolean addEnquiry(ViewEnquiriesDTO enqDTO ,Integer counsellorId);
 	public List<ViewEnquiriesDTO> getEnquiries(Integer counsellorId);
 	public List<ViewEnquiriesDTO> getEnquiries(FilterEnquiriesDTO filterDTO,Integer counsellorId);
 	public ViewEnquiriesDTO getEnquiriesById(Integer enqId);

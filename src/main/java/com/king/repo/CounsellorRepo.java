@@ -5,5 +5,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.king.entity.Counsellor;
 
 public interface CounsellorRepo extends JpaRepository< Counsellor,Integer> {
+	
+	public Counsellor findByEmailAndPswd(String email,String pswd);
+	public Counsellor findByEmail(String email);
 
 }
