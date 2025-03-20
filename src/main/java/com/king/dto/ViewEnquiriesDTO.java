@@ -5,10 +5,10 @@ import lombok.Data;
 @Data
 public class ViewEnquiriesDTO {
 
-	private Integer enquiryId;
+	private Integer enqId;
 	private String stuName;
-	private String phNo;
+	private String phno;
 	private String classMode;
-	private String courses;
-	private String courseStatus;
+	private String course;
+	private String enqStatus;
 }

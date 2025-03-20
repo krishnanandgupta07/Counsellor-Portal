@@ -6,6 +6,6 @@ import lombok.Data;
 public class FilterEnquiriesDTO {
 
 	private String classMode;
-	private String courses;
-	private String courseStatus;
+	private String course;
+	private String enqStatus;
 }

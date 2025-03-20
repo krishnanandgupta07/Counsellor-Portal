@@ -90,12 +90,12 @@ public class EnquiryServiceImpl implements IEnquiryService {
 				entity.setClassMode(filterDTO.getClassMode());
 			}
 			
-			if(filterDTO.getCourses()!=null && !filterDTO.getCourses().equals("")){
-				entity.setCourses(filterDTO.getCourses());
+			if(filterDTO.getCourse()!=null && !filterDTO.getCourse().equals("")){
+				entity.setCourses(filterDTO.getCourse());
 			}
 			
-			if(filterDTO.getCourseStatus()!=null && !filterDTO.getCourseStatus().equals("")){
-				entity.setEnqStatus(filterDTO.getCourseStatus());
+			if(filterDTO.getEnqStatus()!=null && !filterDTO.getEnqStatus().equals("")){
+				entity.setEnqStatus(filterDTO.getEnqStatus());
 			}	
 				Counsellor counsellor=new Counsellor();
 				counsellor.setCounsellorId(counsellorId);

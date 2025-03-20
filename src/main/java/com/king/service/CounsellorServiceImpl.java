@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import com.king.dto.CounsellorDTO;
 import com.king.entity.Counsellor;
 import com.king.repo.CounsellorRepo;
+
 @Service
 public class CounsellorServiceImpl implements ICounsellorService {
 	@Autowired
@@ -14,7 +15,7 @@ public class CounsellorServiceImpl implements ICounsellorService {
 
 	@Override
 	public CounsellorDTO login(CounsellorDTO counsellorDTO) {
-		Counsellor entity=consRepo.findByEmailAndPswd(counsellorDTO.getEmailId(),counsellorDTO.getPwd());
+		Counsellor entity=consRepo.findByEmailAndPwd(counsellorDTO.getEmail(),counsellorDTO.getPwd());
 		if(entity!=null) {
 			//copy entity obj data into dto  obj and return dto obj
 			

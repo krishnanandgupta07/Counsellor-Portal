@@ -21,9 +21,9 @@ public class Counsellor {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer counsellorId;
 	private String name;
-	private String emailId;
+	private String email;
 	private String pwd;
-	private String phNo;
+	private String phno;
 	@OneToMany(mappedBy = "counsellor",cascade = CascadeType.ALL)
 	private List<Enquiry> enquiries;
 
