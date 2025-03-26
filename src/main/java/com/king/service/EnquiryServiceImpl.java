@@ -32,15 +32,15 @@ public class EnquiryServiceImpl implements IEnquiryService {
 		DashboardDTO dto=new DashboardDTO();
 		
 				int openCnt = enqList.stream()
-													  .filter(enq->enq.getEnqStatus().equals("OPEN"))
+													  .filter(enq->enq.getEnqStatus().equals("Open"))
 													 .collect(Collectors.toList()).size();
 		
 				int enrollCnt = enqList.stream()
-													 .filter(enq->enq.getEnqStatus().equals("ENROLLED"))
+													 .filter(enq->enq.getEnqStatus().equals("Enrolled"))
 													 .collect(Collectors.toList()).size();
 		
 					int lostCnt = enqList.stream()
-													    .filter(enq->enq.getEnqStatus().equals("LOST"))
+													    .filter(enq->enq.getEnqStatus().equals("Lost"))
 													    .collect(Collectors.toList()).size();
 		
 					dto.setTotalEnquiries(enqList.size());

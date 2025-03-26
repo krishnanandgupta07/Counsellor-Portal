@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.king.dto.CounsellorDTO;
 import com.king.dto.DashboardDTO;
-import com.king.service.CounsellorServiceImpl;
-import com.king.service.EnquiryServiceImpl;
+import com.king.service.ICounsellorService;
+import com.king.service.IEnquiryService;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -19,9 +19,9 @@ import jakarta.servlet.http.HttpSession;
 public class CounsellorController {
 	
 	@Autowired
-	private EnquiryServiceImpl enqService;
+	private IEnquiryService enqService;
 	@Autowired
-	private CounsellorServiceImpl consService;
+	private ICounsellorService consService;
 	
 
 	@GetMapping("/")
